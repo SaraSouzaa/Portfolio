@@ -1,4 +1,72 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  
 }
+
+ul {
+  list-style: none;
+  font-size: 20px;
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+ul li {
+  margin: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background:linear-gradient(90deg, #355C7D, #6C5B7B, #C06C84);
+
+}
+
+.container {
+  text-align: center;
+  
+  
+}
+
+.container .name h1 {
+  font-size: 60px;
+  
+}
+
+.container .name h5 {
+  font-size: 25px;
+  
+}
+
+img {
+  max-width: 60%;
+}
+
+#about p {
+  max-width:600px;
+  margin: 0 auto;
+  
+  
+}
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.form input {
+  width: 50%;
+}
+
+.form button {
+  width: 15%;
+  color: #545c7c;
+}
+
