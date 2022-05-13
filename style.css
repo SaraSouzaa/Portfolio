@@ -12,8 +12,17 @@ ul {
   font-size: 20px;
   font-style: italic;
   display: flex;
-  justify-content: flex-end;
+ 
 
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  display: flex;
 }
 
 ul li {
