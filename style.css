@@ -38,18 +38,18 @@ body {
 
 }
 
-.container {
+.home {
   text-align: center;
-  
+  height: 100vh;
   
 }
 
-.container .name h1 {
+.home .name h1 {
   font-size: 60px;
   
 }
 
-.container .name h5 {
+.home .name h5 {
   font-size: 25px;
   
 }
@@ -79,10 +79,30 @@ img {
   color: #545c7c;
 }
 
-.projects #nameProjects {
+.projects {
+  margin: 50px 0px;
+}
+
+.projects .nameProjects {
   text-align: center;
+  text-color: #355C7D;
 }
 
 .projects {
-  background-color: #6C5B7B;
+  background:linear-gradient(90deg, #6C5B7B, #C06C84);
+  height: 100vh;
+  padding: 2% 5% 2% 5%;
 }
+
+.card {
+  max-width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border: 2px solid black;
+  border-radius: 5px; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
