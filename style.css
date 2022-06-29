@@ -1,4 +1,4 @@
-* {
+ * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -58,6 +58,27 @@ img {
   max-width: 60%;
 }
 
+#arrow {
+  font-size: 35px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+  to {
+    visibility: hidden;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.activeAbout {
+  display: block !important;
+}
+
 #about p {
   max-width:600px;
   margin: 0 auto;
@@ -71,7 +92,7 @@ img {
 }
 
 .form input {
-  width: 50%;
+  width: 70%;
 }
 
 .form button {
@@ -79,19 +100,26 @@ img {
   color: #545c7c;
 }
 
-.projects {
+/*.projects {
   margin: 50px 0px;
 }
+*/
 
 .projects .nameProjects {
   text-align: center;
   text-color: #355C7D;
+  font-size: 30px;
+  margin: 0px 0px 100px 0px;
 }
 
 .projects {
   background:linear-gradient(90deg, #6C5B7B, #C06C84);
-  height: 100vh;
+  /*height: 100vh;*/
   padding: 2% 5% 2% 5%;
+}
+
+/*.projects a{
+  color: black;
 }
 
 .card {
@@ -104,5 +132,34 @@ img {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}*/
+
+.logo img{
+  max-width: 30%;
 }
 
+footer {
+  text-align: center;
+  margin: 10px;
+}
+
+footer span {
+  font-weight: bold
+}
+
+.desenvolvimentoProjects {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.desenvolvimentoProjects p {
+  font-size: 30px;  
+
+}
+
+.desenvolvimentoProjects img{
+  width: 35%;
+  height: 35%;
+
+}

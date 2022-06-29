@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Souza PORTFOLIO</title>
+    <title>Portfolio Sara Souza</title>
+    <link rel="icon" type="image/x-icon" href="img/faviconTP.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
@@ -12,12 +13,12 @@
 </head>
 <body>
     <header>
-        <div>
-            logo
+        <div class="logo">
+            <img src="img/saraLogo.png">
         </div>
         <ul>
             <li>
-                <a target="_blank" href="https://github.com/wittzinha/">github</a>
+                <a target="_blank" href="https://github.com/SaraSouzaa/">github</a>
             </li>
             <li>
                 <a href="mailto:sarali17@hotmail.com">email</a>
@@ -31,51 +32,67 @@
         <section class="home">
             <div class="name">
                 <h1>Sara Souza</h1>
-                <h5>Developer</h5>
+                <h5>Front-end Developer</h5>
             </div>
 
             <div class="avatarSara">
               <img src="img/avatarSara.png">
             </div>
           
-            <div id="arrow">
-                <i class="fa-solid fa-angles-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
             </div>
 
-            <div id="about">
+            <div style="display: none;" id="about">
               <p>
                 <p>Olá, eu sou a Sara Cristina de Souza, moro em Tremembé-SP e atualmente curso Análise e Desenvolvimento de Sistemas na FATEC Taubaté. Estou estudando Java, Javascript, HTML e CSS, pretendo me tornar uma desenvolvedora Fullstack. </p>
 
               </p>
             </div>
-
-            <div class="form">
-              <div>
-                <p>Deixe seu contato!</p>
-              </div>
-              <form action>
-                <input type="email" placeholder="Seu melhor email!">
-                <button>Enviar!</button>
-              </form>  
-            </div>
           
         </section>
 
         <section class="projects">
+          
           <div class="nameProjects">
             <h2>Projetos</h2>
-          <div>
+          </div>
 
-          <div class="card">
+            
+            <div class="desenvolvimentoProjects">
+              <img src="img/emDesenvolvimento2.png">
+              <p>Em Desenvolvimento</p>
+            </div>
+            
+
+
+          
+         <!-- <div class="card">
             <img src="img/projetoCalculadora.png" alt="Avatar" style="width:100%">
           <div class="container">
             <h4><b>Calculadora Reprograma</b></h4>
-            <p>Desenvolvi a parte de backend com JavaScript</p>
-          </div>
+            <p>Desenvolvi a parte de backend com JavaScript, acesse o projeto <a href="https://calculadora-workshop-sara-souza.netlify.app/" target="_blank">aqui!</a></p>
+          </div> -->
 </div>
+          
         </section>  
     
     </main>
+
+    <footer>
+      <p>Desenvolvido com ❤ por <span>Sara Souza</span></p>
+    </footer>
+  
   <script src="https://kit.fontawesome.com/77189bccf6.js" crossorigin="anonymous"></script>
+
+<script>
+  function displayAbout() {
+  var arrow = document.getElementById('animation');
+  arrow.classList.toggle('rotate');
+  var display = document.getElementById('about');
+  display.classList.toggle('activeAbout');
+}
+</script>
+  
 </body>
 </html>
