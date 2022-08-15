@@ -109,7 +109,7 @@ img {
   text-align: center;
   text-color: #355C7D;
   font-size: 30px;
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 50px 0px;
 }
 
 .projects {
@@ -118,21 +118,30 @@ img {
   padding: 2% 5% 2% 5%;
 }
 
-/*.projects a{
-  color: black;
+#projects {
+  display: flex;
+  justify-content: space-around;
+  
 }
 
-.card {
-  max-width: 40%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border: 2px solid black;
-  border-radius: 5px; 
+#projects div {
+  text-align: center;
+  align-content: center;
+  max-width: 30%;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}*/
+h5 {
+  font-size: 18px;
+}
+
+#projects div p, h5 {
+
+}
+
+#projects a {
+  color: #355C7D;
+  font-weight: bold;
+}
 
 .logo img{
   max-width: 30%;
@@ -147,19 +156,4 @@ footer span {
   font-weight: bold
 }
 
-.desenvolvimentoProjects {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
-.desenvolvimentoProjects p {
-  font-size: 30px;  
-
-}
-
-.desenvolvimentoProjects img{
-  width: 35%;
-  height: 35%;
-
-}
